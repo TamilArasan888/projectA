@@ -1,0 +1,10 @@
+		this.title=title; // this.title is global variable, and title is a local variable
+		title=filmTitle; // This is similar to  this.title=filmTitle , but using this. prefix is not compulsory
+		director=filmDirector; // This is similar to  this.director=filmDirector, but using this. prefix is not compulsory
+			// As there are no ;local variables by name title, or director 
+			// So ,here they will implicitly refer to global variable
+			// Note : If title and director are not globally declare then it will be undeclared variable
+			// if the parameter names are similar to the global variables
+			// then there is an ambiguity between local variable the local variable(parameters) and global variable
+			// hence this. prefix is used for referring the global variable
+			// title=title will be referring he local variable on both side of the = operator (x=x) self assigning
