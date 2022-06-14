@@ -3,8 +3,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Calendar;
 public class LogManager {
-	
-	
 	public void logException(Exception ex,String source,String exMessage) {
 		Calendar vCalendar=Calendar.getInstance();
 		String logDate=vCalendar.get(Calendar.DATE)+"_"+(vCalendar.get(Calendar.MONTH)+1)+"_"+vCalendar.get(Calendar.YEAR);
@@ -20,8 +18,6 @@ public class LogManager {
 		String fileName="ExceptionMessages"+logDate+".log";
 		writeToFile(fileName,message);
 	}
-	
-	
 	public void logException(Exception ex,String source) {
 		Calendar vCalendar = Calendar.getInstance();
 		String logDate=vCalendar.get(Calendar.DATE)+"_"+(vCalendar.get(Calendar.MONTH)+1)+"_"+vCalendar.get(Calendar.YEAR);
@@ -34,8 +30,6 @@ public class LogManager {
 		String fileName="ExceptionMessages"+logDate+".log";
 		writeToFile(fileName,message);
 	}
-	
-	
 	private void writeToFile(String fileName,String message) {
 		
 		fileName = "D://LogManager//"+fileName+".txt";
@@ -54,5 +48,6 @@ public class LogManager {
 		}	
 		
 	}
-}
 
+
+}

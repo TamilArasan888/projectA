@@ -40,11 +40,11 @@ public class Employee {
 	}
 	
 	
-	public Date getHire_Date() {
+	public Date getHire_date() {
 		return Hire_Date;
 	}
-	public void setHire_Date(Date simpleDateFormat) {
-		this.Hire_Date = simpleDateFormat;
+	public void setHire_date(Date hire_date) {
+		this.Hire_Date = hire_date;
 	}
 	
 	public String getJob_ID() {
@@ -59,5 +59,9 @@ public class Employee {
 	}
 	public void setSalary(float salary) {
 		this.Salary = salary;
+	}
+	public void setHire_Date(SimpleDateFormat simpleDateFormat) {
+		// TODO Auto-generated method stub
+		
 	}
 }
